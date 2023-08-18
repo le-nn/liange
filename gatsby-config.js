@@ -10,8 +10,8 @@ const clientRoutes = ["/app/*"];
 module.exports = {
     // pathPrefix: `/path`, github pagesなどを利用する場合はこちらにルートパスを指定
     siteMetadata: {
-        title: "株式会社VISUALIZ 公式ページ",
-        siteUrl: `https://visualiz.jp`,
+        title: "Liange 尾道",
+        siteUrl: `https://liange-onomichi.com`,
     },
     plugins: [
         // SEO

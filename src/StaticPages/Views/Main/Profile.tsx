@@ -3,13 +3,13 @@ import * as React from "react";
 import img1 from "../../images/img1.jpg";
 import img2 from "../../images/img18.jpg";
 import img3 from "../../images/img3.jpg";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import { SkewScrollTriggerAnimation } from "Components/SkewScrollTriggerAnimation";
 import { TransitionImage } from "Components/TransitionImage";
 
 export const Profile = () => {
     return (
-        <Grid container spacing={{ xs: 2, sm: 3, md: 4 }}>
+        <Grid container spacing={{ xs: 2, sm: 4, md: 8 }}>
             <Grid item xs={12}>
                 <Typography variant="h2" >- PROFILE</Typography>
             </Grid>
@@ -55,13 +55,13 @@ export const Profile = () => {
             </Grid>
 
             <Grid item xs={12} md={8} >
-                <Box>
+                <Stack justifyContent="center" height="100%" maxWidth="620px" m="auto">
                     <SkewScrollTriggerAnimation delay={0} style={{ margin: "0", zIndex: -1 }}>
                         <Typography variant="h5" >店長プロフィール</Typography>
                     </SkewScrollTriggerAnimation>
 
                     <SkewScrollTriggerAnimation delay={100} style={{ margin: "0", zIndex: -1 }}>
-                        <Typography variant="body1">
+                        <Typography variant="body1" mt={1}>
                             1997年に大手エステサロンTBCに入社。<br />
                             長年の勤務で、フェイシャルやボディケア、<br />
                             光脱毛など幅広い分野の施術を手がけることができるスキルを身につけました。<br /><br />
@@ -121,7 +121,7 @@ export const Profile = () => {
                             2015年 Liengeオープン
                         </Typography>
                     </SkewScrollTriggerAnimation>
-                </Box>
+                </Stack>
             </Grid>
 
         </Grid >
